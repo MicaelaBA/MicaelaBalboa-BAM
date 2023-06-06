@@ -1,0 +1,493 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body main{
+	background-color: #faf3ed;
+}
+@font-face{
+	font-family: "fuente1";
+	src: url('../fonts/Saturday-August.ttf'); 
+}
+@font-face{
+	font-family: "fuente2";
+	src: url('../fonts/GeosansLight.ttf'); 
+}
+@font-face{
+	font-family: "fuente3";
+	src: url('../fonts/Montserrat-VariableFont_wght.ttf'); 
+}
+/*----------------------------------------------NAVEGADOR*/
+.navgeneral{
+	box-shadow:0 3px 10px rgba(214, 214, 214, 0.25) ;
+}
+.enlaceLogo1{
+	display: none;
+}
+.navChico{
+	display: grid;
+	grid-template-rows: auto auto;
+}
+.secLista li{
+	text-align: center;
+	margin: auto;
+}
+.navGeneral2 a {
+	width:70px;
+}
+.navGeneral2 a .logo1 {
+	width: 100%;
+}
+ .secRedes{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-right: 2rem;
+	margin-top: 50px;
+	justify-content: center;
+}
+.secRedes li{
+	list-style: none;
+}
+.secRedes li a i{
+	margin: 10px;
+	font-size: 20px;
+	color:#f3b89e;
+}
+/*----------------------------------------------INICIO | BLOG*/
+.sec_inicio_bog{
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+}
+.sec_inicio_bog h4{
+	font-family: fuente3;
+	margin-top: 130px;
+}
+.blog_Contenedor_card{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.blog_card{
+	font-family:fuente2 ;
+	text-align: center;
+	border: none;
+	margin: 10px;
+	background-color:#faf3ed ;
+}
+.blog-card-body a{
+	text-decoration: none;
+	color: black;
+}
+/*----------------------------------------------INICIO-BLOG | NAVEGADOR INTERNO*/
+.blog-pages li a{
+	text-align: center;
+	color: gray;
+	width: 40px;
+}
+.blog-link-AI{
+	width: 90px !important;
+}
+/*----------------------------------------------BLOG | CALENDAR*/
+.sec_Blog-Calendar{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px;	
+}
+.sec_Blog-Calendar h1{
+	text-align: center;
+	margin-top: 130px;
+}
+.sec_Blog-Calendar p{
+	margin-top: 10px;
+	font-family: fuente3;
+} 
+.art_contenedor_cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.art_card{
+	font-family:fuente2 ;
+	text-align: center;
+	border: none;
+	width: 60% !important;
+	margin: 10px;
+	background-color:#faf3ed ;
+}
+.art_card-body a{
+	text-decoration: none;
+	color: black;
+}
+.art_contenedor h5{
+	text-align: center;
+}
+/*----------------------------------------------PAGINA COMPRA AGENDA*/
+.secAgenda{
+	display: grid;
+	grid-template-rows: auto auto;
+}
+.secAgenda_img video{
+	margin-top: 100px;
+	width: 300px;
+}
+.secAgenda_img{
+	display: flex;
+	justify-content: center;
+}
+.secAgenda_text{
+	padding: 30px;
+	font-family: fuente3;
+}
+.secAgenda_text h4{
+	font-family: fuente2;
+}
+.secAgenda_text input{
+	width: 80px;
+}
+.secAgenda_button{
+	margin: 15px;
+	padding:5px;
+	width: 50%;
+	font-family: fuente3;
+	font-size: 12px;
+	border: 2px solid #d49c28;
+	background-color: #f8dcd0;
+	transition: 0.3s;
+}
+.secAgenda_button:hover{
+	transition: 0.3s;
+	background-color: #d49c28;
+	transform: translateY(-5px);
+	box-shadow: 4px 4px 4px  #8d8d8d;
+}
+.secAgenda_compra{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*----------------------------------------------CONTACTOS*/
+.sec_Contacto{
+	margin-top: 80px;
+}
+.sec_Contact_datos{
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+}
+.sec_Contact_datos h3{
+	color:  rgb(219 149 123);
+	margin-top: 10px;
+}
+.sec_Contact_datos b{
+	color: rgb(219 149 123);
+}
+.sec_Contact_datos span{
+	text-align: center;
+	width: 90%;
+}
+.sec_Contact_datos i{
+	margin-right: 10px;
+	font-size: 20px;
+}
+.sec_Contact_mapa{
+	display: flex;
+	justify-content: center;
+}
+.sec_Contact_mapa iframe{
+	width: 300px;
+}
+.form_contacto{
+	background-image: url("../images/imgCon.png");
+	background-repeat: no-repeat;
+	margin: 50px 0 50px 0;
+}
+.form_contacto .fond{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 20px;
+	background-color: rgb(56 56 56 / 70%);
+}
+.form_contacto h1{
+	color: white;
+	width: 100%;
+}
+ .fond input{
+	border: none;
+	color: white;
+	width: 100%;
+	margin-top: 30px;
+	background-color: rgb(56 56 56 / 0%);
+	border-bottom: 1px solid #ffffffb0;
+}
+.fond input:focus{
+	outline: none;
+}
+.Gtext:focus{
+		outline: none;
+}
+.Gtext{
+	border: 1px solid #ffffffb0;
+	margin-top: 30px;
+	width: 100%;
+	background-color: rgb(56 56 56 / 0%);
+}
+.fond button{
+	margin: auto;
+	margin-top: 20px;
+	width: 50%;
+	padding: 10px;
+	border: none;
+	background-color: rgb(219 149 123);
+	color: white;
+}
+::placeholder{
+	color: #ffffffb0;
+}
+/*----------------------------------------------INICIO-BLOG | FOOTER*/
+footer{
+	background-color:#f8dcd0;
+}
+.cate{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cate .lista{
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+	margin-left: 60px;
+	flex-direction: column;
+}
+.cate .lista a{
+	text-decoration: none;
+	color: black;
+}
+.contenedor_logo {
+	display: flex;
+	justify-content: center;
+}
+.contenedor_logo a{
+	width:150px;
+}
+.logo_img{
+	margin: auto;
+	width:100%;
+}
+.contac{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.contac ul{
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+.contac ul li{
+	list-style: none;
+}
+.contac ul li a{
+	margin: 10px 20px 20px 20px;
+	color: #d49c28;
+}
+@media(min-width: 480px){
+	.logo a {
+		display: flex;
+		justify-content: center;
+		width:30%;
+	}
+	.navGeneral2 a {
+		width:100px;
+	}
+	.sec_Blog-Calendar iframe{
+		width: 450px;
+	}
+	.art_card{
+		width: 40% !important;
+	}
+	.Contenedor_email{
+		display: flex;
+		justify-content: center;
+	}
+
+	.sec_Contact_mapa iframe{
+		width: 450px;
+	}
+	.form_contacto .fond input{
+		margin: auto;
+		padding: 10px;
+		width: 30%;
+	}
+	.Pie-form{
+		width: 70%;
+	}
+}
+@media(min-width: 768px){
+	.sec_inicio_bog hr{
+		width:20%;	
+	} 
+	.enlaceLogo1{
+		display: block;
+	}
+	.enlaceLogo1 img{
+		width: 100%;
+	}
+	.navGeneral2 .enlaceLogo{
+		display: none;
+	}
+	.art_contenedor_cards{
+		flex-direction: column;
+		align-items: center;
+	 }
+	 .sec_Blog-Calendar iframe{
+		width: 600px;
+	}
+	.sec_Blog-Calendar hr{
+		width: 70%;
+	}
+	.sec_Blog-Calendar p{
+		width: 90%;
+	}
+	.secAgenda{
+		display: grid;
+		grid-template-columns: auto auto;
+		padding: 25px;
+	}
+	.secAgenda_img video{
+		height: 300px;
+		width: 300px;
+		margin: 0;
+		margin-top: 50px;
+	}
+	.secAgenda_text{
+		margin-top: 70px;
+	}
+	.secAgenda_compra{
+		display: flex;
+		flex-direction: row;
+	}
+	.secAgenda_compra input{
+		margin-left: 20px;
+	}
+	.sec_Contacto {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: center;	
+	}
+	.sec_Contact_datos span{
+		display: flex;
+		justify-content: flex-start;
+		margin: 15px;
+		border-bottom: 1px solid #6e6e6e29;
+	}
+	.sec_Contact_datos b{
+		margin-left: 10px;
+	}
+	.sec_Contact_mapa{
+		margin-left: 100px;
+	}
+	.mapa iframe{
+		width: 450px;
+	}
+	 .fond button{
+		width: 30%;
+	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 20px;
+	}
+	.contac ul{
+		padding: 0;
+	}
+	.Pie-form{
+		width: 100%;
+	}
+	.contenedor_logo a {
+		width: 150px;
+	}
+	.contenedor_logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo_img{
+		width: 100%;
+	}
+}
+@media(min-width: 1024px){
+	.secLista a{
+		font-size: 20px;
+	}
+	.secRedes li a{
+		font-size: 20px;
+	}
+	.sec_Blog-Calendar hr{
+		width: 50%;
+	}
+	.blog_card{
+		width: 25% !important;
+	}
+	.blog-card-body a{
+		font-size: 18px;
+	}
+	.sec_Blog-Calendar h1{
+		font-size: 30px;
+	}
+	.sec_Blog-Calendar iframe{
+		margin: 15px 0 15px 0;
+		width: 700px;
+		height: 400px;
+	}
+	.grid-layout{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.art_contenedor h5{
+		margin-top: 150px;
+	}
+	.sec_Blog-Calendar p{
+		width: 80%;
+	}
+	.art_card{
+		width: 70% !important;
+	}
+	.secAgenda{
+		padding: 40px;
+	}
+	.secAgenda_img video{
+		margin-top: 100px;
+		height: 300px;
+		width: 500px;
+	}
+	.secAgenda_compra button{
+		width: 150px;
+	}
+	.mapa iframe{
+		width: 700px;
+	}
+	.Gtext{
+		width: 800px;
+		height: 100px;
+	}
+}
+@media(min-width: 1200px){
+	.Gtext{
+		width: 700px;
+		margin-left: 20px;
+		
+	}
+	.fond button{
+		margin-top: 60px;
+		width: 20%;
+	}
+}

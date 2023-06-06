@@ -1,0 +1,539 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body main{
+	background-color: #faf3ed;
+}
+/*-------------------------------------------------------FUENTES*/
+@font-face{
+	font-family: "fuente1";
+	src: url('../fonts/Saturday-August.ttf'); 
+}
+@font-face{
+	font-family: "fuente2";
+	src: url('../fonts/GeosansLight.ttf'); 
+}
+@font-face{
+	font-family: "fuente3";
+	src: url('../fonts/Montserrat-VariableFont_wght.ttf'); 
+}
+/*-------------------------------------------------------texto*/
+.HeaderText{
+	text-align: center;
+	background-color: #f8dcd0;
+	font-family: fuente2;
+}
+/*-----------------------------------------------------BARRA DE NAVEGACIÓN CHICO*/
+.nav2{
+	display: none;
+}
+.buscar{
+	display: none;
+}
+.logo2{
+	display: none;
+}
+.navChico{
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-content: center;
+	text-align: center;
+}
+.navChico .secRedes{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-bottom: 180px;
+	margin-right: 2rem;
+	justify-content: center;
+}
+.navChico .secRedes li{
+	list-style: none;
+}
+.navChico .secRedes li a i{
+	margin: 10px;
+	font-size: 20px;
+	color:#f3b89e;
+}
+
+/*-----------------------------------------------------BARRA DE NAVEGACIÓN COMPLETO*/
+.HeaderRedesSociales{
+	display: none;
+}
+.HeaderRedesSociales ul{/*estos estilos solo van a funcionar cuando use el media
+ query, esta bien que lo coloco en esta parte aunque no lo utilice
+  o debo de colocarlo en el media query correspondiente?*/
+	display: flex;
+	list-style: none;
+}
+.HeaderRedesSociales ul li i{
+	margin: 10px;
+	color: #d49c28;
+}
+.HeaderRedesSociales .iconoNegro{
+	color: #383838;
+}
+/*----------------------------------------------1ra sección con foto de mj*/
+.Sec1_CajaGeneral{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #f8dcd0;
+	padding: 40px;
+}
+.Sec1_Cajatext{
+	position: relative;
+	text-align: center;
+}
+.Sec1_Tex1{
+	font-size: 45px;
+	font-family: fuente1;
+	color: #d49c28;
+}
+.Sec1_Tex2{
+	font-size: 30px;
+	font-family: fuente2;
+	color: white;
+}
+.Sec1_Tex3{
+	font-size: 10px;
+	font-family: fuente3;
+}
+.Sec1_button{
+	margin: 15px;
+	padding:5px;
+	width: 50%;
+	font-family: fuente3;
+	font-size: 10px;
+	border: 2px solid #d49c28;
+	background-color: #f8dcd0;
+	transition: 0.3s;
+}
+.Sec1_button a{
+	text-decoration: none;
+	color: black;
+}
+.Sec1_button:hover{
+	transition: 0.3s;
+	background-color: #d49c28;
+	transform: translateY(-5px);
+	box-shadow: 4px 4px 4px  #8d8d8d;
+}
+.Sec1_CajaMj_IMG{
+	width:100%;
+	box-shadow: 4px 4px 4px  #8d8d8d;
+}
+
+/*----------------------------------------------------BUSCADOR*/
+.Sec2_Buscador{
+	padding: 50px;
+}
+.Buscar_Button{
+	width: 120px;
+	background-color:#d49c28;
+	border:none ;
+	border-radius: 5px;
+}
+.Buscar_Tex1{
+	text-align: center;
+	color: #d49c28;
+}
+.Buscar_Tex2{
+	text-align: center;
+	font-size: 15px;
+	font-family: fuente3;
+}
+.Buscar_Button i{
+	color: white;
+}
+/*--------------------------------------------------3RA sección de 3 fts*/
+.Sec3_Contenedor{
+	margin-top: 20px;
+	text-align: center;
+	color: #d49c28;
+}
+.sec3_IMG{
+	margin: 10px;
+	width: 60%;
+}
+/*---------------------------------------------------4to sec MD*/
+.sec4_FtCafe{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #f8dcd0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.sec4_contenedorText{
+	width: 100%;
+	text-align: center;
+}
+.sec4_img {
+	margin-top: 20px;
+	width: 100%;
+}
+.lt1{ 
+	font-size: 30px;
+	font-family: fuente2;
+ }
+.lt2{
+	font-size: 50px; 
+	font-family: fuente1;
+ }
+.sec4_text2{	
+	font-family: fuente2;
+}
+.sec4_button{
+	border:none ;
+	background-color: #faf3ed;
+	padding:5px 20px 5px 20px;
+	box-shadow: 4px 4px 4px  #8d8d8d;
+}
+/*---------------------------------------------------Video de Yt*/
+.secyt{
+	color: #d49c28;
+	margin: 20px 0 20px 0;
+}
+/*---------------------------------------------------Seccion 5 | BLOG*/
+.sec5{
+	color: #d49c28;
+	text-align: center;
+}
+.sec5 .caja{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.sec5 .card{
+	margin-top: 20px;
+}
+.sec5 button{
+	border: none;
+	box-shadow: 4px 4px 4px  #8d8d8d;
+	padding: 5px 20px 5px 20px;
+	margin: 40px 0 40px 0;
+	background-color: #d49c28;
+}
+.sec5 a{
+	text-decoration: none;
+	color: white;
+
+}
+/*---------------------------------------------------BOTON ARRIBA*/
+
+#arriba{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #ffae90cf;
+	background-color:  #ffae90cf;
+	position: fixed;
+	left: 85%;
+	bottom: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	transform: scale(0);
+}
+#arriba:hover{
+	opacity: .70;
+	transform: scale(1.1);
+}
+.bi-chevron-double-up{
+	font-size: 15px;
+}
+/*---------------------------------------------------PIE DE PAGINA*/
+footer{
+	background-color:#f8dcd0;
+}
+.cate{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cate .lista{
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+	margin-left: 60px;
+	flex-direction: column;
+}
+.cate .lista a{
+	text-decoration: none;
+	color: black;
+}
+.contenedor_logo {
+	display: flex;
+	justify-content: center;
+}
+.contenedor_logo a{
+	width:150px;
+}
+.logo_img{
+	margin: auto;
+	width:100%;
+}
+.contac{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.contac ul{
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+.contac ul li{
+	list-style: none;
+}
+.contac ul li a{
+	margin: 10px 20px 20px 20px;
+	color: #d49c28;
+}
+@media(min-width: 480px){
+	nav{
+		display: none;
+	}
+	.Sec1_CajaMj{
+		display: flex;
+		justify-content: center;
+	}
+	.Sec1_CajaMj_IMG{
+		width:40%;
+	}
+	.Sec1_Tex3{
+		font-size: 13px;
+	}
+	.sec3_CajaIMG img {/*consultar:  si solo pongo sec3_IMG no me deja achicar la img*/
+	 	width: 50%;
+	}
+	.sec4_contenedorText{
+		padding: 15px;
+	}
+	.sec4_ContenedorIMG{
+		display: flex;
+		justify-content: center;
+	}
+	.sec4_ContenedorIMG img{
+		
+		width: 50%;
+	}
+	.yt{
+		width: 450px;
+	}
+	.contenedorF{
+		margin-left: 60% !important;
+	}
+	footer .logo img{
+		width:30%;
+	}
+	.Contenedor_email{
+		display: flex;
+		justify-content: center;
+	}
+	.Pie-form{
+		width: 70%;
+	}
+}
+@media(min-width: 600px){
+	.sec5 .caja{
+		justify-content: space-around;
+	}
+	.logo img{
+		width:30%;
+	}
+	.contenedorF{
+		margin-left: 65% !important;
+	}
+}
+@media(min-width: 768px){
+	.navGeneral2{
+		display: grid;
+		padding: 20px;
+		grid-template-columns: auto  auto auto;
+	}
+	.HeaderRedesSociales{
+		padding: 20px;
+		display: block;
+	}
+	.nav2{
+		display: block;
+		display: flex;
+		justify-content: center;
+	}
+	.nav2 span{
+		padding: 20px;
+	}
+	.nav2 a{
+		text-decoration: none;
+		color: #d49c28;
+		transition: 0.3s;
+	}
+	.nav2 span a:hover{
+		color: #f5d28a;
+		transition: 0.3s;
+	}
+	.buscar{
+		padding: 20px;
+		width: 29%;
+		display: block;
+	}
+	.logo2{
+		display: block;
+	}
+	.logo2 img{
+		display: block;
+	}
+	.logo1{
+		display: none;
+	}
+	.contenedorF{
+		display: none !important;
+	}
+	.Sec1_button{
+		transition: 0.3s;
+		font-size: 15px;
+	}
+	.Buscar_Tex1{
+		font-size: 30px;
+	}
+	.Buscar_Tex2{
+		font-size: 20px;
+	}
+	.Coneten_Buscar{
+		display: flex;
+		justify-content: center;
+	}
+	.Form_Buscar{
+		padding: 10px;
+		width: 400px;
+	}
+	.Sec3_Contenedor h4{
+		font-size: 30px;
+	}
+	.sec4_FtCafe .sec4_text2 h5{
+		font-size: 25px;
+	}
+	.yt{
+		width: 700px;
+	}
+	.sec5 .card{
+		margin: 10px;
+	}
+	.sec5 button{
+		padding: 10px 40px 10px 40px;
+	}
+	#arriba{
+		margin-left: 50px;
+	}
+	.contac i{
+		font-size: 25px;
+	}
+	.cate{
+
+	}
+
+}
+@media(min-width: 1024px){
+	.buscar{	
+		width: 20%;
+	}
+	.Sec1_CajaGeneral{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.Sec1_Cajatext{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+		padding: 30px;
+	}
+	.Sec1_CajaMj{
+		width: 50%;
+	}
+	.Sec1_CajaMj_IMG{
+		width: 50%;
+	}
+	.sec3_CajaIMG img {
+	 	width: 30%;
+	}
+	.sec4_FtCafe_Inter{
+		display: flex;
+	}
+	.sec4_contenedorText{
+		width: 50%;
+		padding: 40px;
+		margin: auto;
+	}
+	.sec4_ContenedorIMG{
+		width: 90%;
+	}
+	.sec4_img{
+
+		margin-bottom: 15px;
+	}
+	#arriba{
+		margin-left: 100px;
+	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 20px;
+	}
+	.contac ul{
+		padding: 0;
+	}
+	.Pie-form{
+		width: 100%;
+	}
+	.contenedor_logo a {
+		width: 150px;
+	}
+	.contenedor_logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo_img{
+		width: 100%;
+	}
+}
+@media(min-width: 1200px){
+	.buscar{
+		width: 15%;
+	}
+	.yt{
+		height: 400px;
+	}
+	.contac{
+		width: 26%;
+	}
+	.Sec1_Tex1{
+		font-size: 60px;
+	}
+	.Sec1_Tex2{
+		font-size: 50px;
+	}
+	.Sec1_Tex3{
+		font-size: 20px;
+	}
+	.sec3_CajaIMG img {/*consultar:  si solo pongo sec3_IMG no me deja achicar la img*/
+	 	width: 25%;
+	}
+	#arriba{
+		margin-left: 130px;
+	}
+	.cate{
+		width: 300px;
+	}
+	.Pie-form{
+		width: 65%;
+	}
+}
